@@ -90,7 +90,7 @@ router.post('/g4s2/parent-organisations', function(req, res) {
 
 // parent-not-uk
 router.post('/g4s2/parent-not-uk', function(req, res) {
-    res.redirect('g4s2/index.html');
+    res.redirect('../index');
 });
 
 // other-parent-lives
@@ -193,15 +193,15 @@ router.post('/g4s2/make-own-arrangement', function(req, res) {
     res.redirect('bau');
 });
 
-// bau
-router.post('/g4s2/bau', function(req, res) {
-    res.redirect('index.html');
-});
-
-// bau2
-router.post('/g4s2/bau2', function(req, res) {
-    res.redirect('index.html');
-});
+// // bau
+// router.post('/g4s2/bau', function(req, res) {
+//     res.redirect('index.html');
+// });
+//
+// // bau2
+// router.post('/g4s2/bau2', function(req, res) {
+//     res.redirect('../index.html');
+// });
 
 // used-calculator-rp
 router.post('/g4s2/used-calculator-rp', function(req, res) {
