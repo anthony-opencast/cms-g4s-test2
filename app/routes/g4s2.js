@@ -98,7 +98,7 @@ router.post('/g4s2/other-parent-lives', function(req, res) {
   if (req.body['other-parent-lives'] === 'uk') {``
     res.redirect('research-questions');
   } else if (req.body['other-parent-lives'] === 'unknown')  {
-    res.redirect('bau2');
+    res.redirect('bau');
   } else {
     res.redirect('other-parent-organisations');
   }
@@ -184,7 +184,7 @@ router.post('/g4s2/choice', function(req, res) {
   if (req.body['choice'] === 'own-arrangement') {``
     res.redirect('make-own-arrangement');
   } else {
-    res.redirect('bau');
+    res.redirect('user-research');
   }
 });
 
@@ -193,15 +193,11 @@ router.post('/g4s2/make-own-arrangement', function(req, res) {
     res.redirect('bau');
 });
 
-// // bau
-// router.post('/g4s2/bau', function(req, res) {
-//     res.redirect('index.html');
-// });
-//
-// // bau2
-// router.post('/g4s2/bau2', function(req, res) {
-//     res.redirect('../index.html');
-// });
+// user-research
+router.post('/g4s2/user-research', function(req, res) {
+    res.redirect('bau.html');
+});
+
 
 // used-calculator-rp
 router.post('/g4s2/used-calculator-rp', function(req, res) {
