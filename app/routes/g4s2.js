@@ -174,10 +174,12 @@ router.post('/g4s2/options-paying', function(req, res) {
     res.redirect('choice');
 });
 
+
 // options-receiving
 router.post('/g4s2/options-receiving', function(req, res) {
     res.redirect('choice');
 });
+
 
 // choice
 router.post('/g4s2/choice', function(req, res) {
@@ -188,14 +190,16 @@ router.post('/g4s2/choice', function(req, res) {
   }
 });
 
+
 // make-own-arrangement
 router.post('/g4s2/make-own-arrangement', function(req, res) {
-    res.redirect('bau');
+    res.redirect('user-research');
 });
+
 
 // user-research
 router.post('/g4s2/user-research', function(req, res) {
-    res.redirect('bau.html');
+    res.redirect('bau');
 });
 
 
@@ -207,6 +211,7 @@ router.post('/g4s2/used-calculator-rp', function(req, res) {
     res.redirect('options-receiving');
   }
   });
+
 
 // used-calculator-pp
 router.post('/g4s2/used-calculator-pp', function(req, res) {
