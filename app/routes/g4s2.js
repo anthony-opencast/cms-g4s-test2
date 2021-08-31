@@ -22,7 +22,7 @@ router.post('/g4s2/research-questions', function(req, res) {
   if (req.body['research'] === 'yes') {``
     res.redirect('find-number');
   } else {
-    res.redirect('domestic-abuse');
+    res.redirect('reason');
   }
 });
 
